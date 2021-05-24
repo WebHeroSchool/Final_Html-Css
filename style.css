@@ -1,3 +1,354 @@
 body {
   font-family: 'ptsanscaption-regular', serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.content-box {
+height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 195px;
+  margin-top: 37px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-left: 19px;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  position: relative;
+  margin-left: 46px;
+}
+
+.logo::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: #E89C38;
+  width: 28px;
+  height: 28px;
+  opacity: 0.5;
+  border-radius: 4px;
+}
+
+.logo::after, .logo::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: #E89C38;
+  width: 28px;
+  height: 28px;
+  opacity: 0.5;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.logo::after {
+  left: -42px;
+}
+
+.logo::before {
+  left: -38px;
+  top: 14px;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.main {
+  background-image: url('img/bg2.svg'), url('img/bg1.png'), url('img/iPhone.png');
+  background-repeat: no-repeat;
+  background-size: 54vh, 58vh, 50vh;
+  background-position: left -8vh, right -9vh, center 43vh;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  max-width: 906px;
+  font-size: 40px;
+  margin: 108px 10px 58px 10px;
+}
+
+.wrapp {
+  display: flex;
+  width: 44vh;
+  height: 12vh;
+  justify-content: space-between;
+}
+
+.link-appstore {
+  background-image: url('img/appstore.svg');
+  background-repeat: no-repeat;
+  background-size: 20vh;
+  background-position: left 0;
+  width: 20vh;
+}
+
+.link-playmarket {
+  background-image: url('img/playmarket.svg');
+  background-repeat: no-repeat;
+  background-size: 20vh;
+  background-position: right 0;
+  width: 21vh;
+}
+
+@media (max-width: 1366px) {
+  .header {
+    margin: 0 154px;
+    margin-top: 37px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-left: 104px;
+  }
+
+  .logo::after, .logo::before {
+    width: 22px;
+    height: 22px;
+    top: 5px;
+  }
+
+  .logo::after {
+    left: -33px;
+  }
+
+  .logo::before {
+    left: -29px;
+    top: 9px;
+  }
+
+  .nav {
+    margin-top: 11px;
+  }
+
+  .main {
+    background-image: url('img/1366bg2.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
+    background-size: 41vh, 51vh, 50vh;
+    background-position: left -6vh, right -9vh, center 40vh;
+  }
+
+  .title {
+    max-width: 95vh;
+    font-size: 32px;
+    margin: 83px 0 0 0;
+    letter-spacing: -.2px;
+  }
+
+  .wrapp {
+    width: 38.8vh;
+    height: 12vh;
+  }
+
+  .link-appstore {
+    background-image: url('img/1366appstore.svg');
+    background-repeat: no-repeat;
+    background-size: 18vh;
+    background-position: left 5vh;
+    width: 19vh;
+  }
+
+  .link-playmarket {
+    background-image: url('img/1366playmarket.svg');
+    background-repeat: no-repeat;
+    background-size: 18vh;
+    background-position: right 5vh;
+    width: 19vh;
+  }
+}
+
+@media (max-width: 1170px) {
+  .header {
+    margin: 0px 55px;
+    margin-top: 37px;
+  }
+
+  .logo::before {
+    left: -29px;
+    top: 9px;
+  }
+
+  .main {
+    background-image: url('img/1170bg1.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
+    background-position: left -9vh, right -9vh, center 40vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    margin: 0 40px;
+    margin-top: 108px;
+  }
+
+  .logo {
+    font-size: 42.5px;
+    letter-spacing: -.1vh;
+  }
+
+  .logo::after {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo::after, .logo::before {
+    width: 33px;
+    height: 33px;
+    top: 8px;
+  }
+
+  .logo::after {
+    left: -52px;
+  }
+
+  .logo::before {
+    left: -47px;
+    top: 12px;
+  }
+
+  .hamburger-menu {
+  display: contents;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 52px;
+    right: 36px;
+    width: 26px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff9100;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 195px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: -1px;
+    line-height: 36px;
+  }
+
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0px;
+  }
+
+  .title {
+    max-width: 44vh;
+    font-size: 24px;
+    margin: 24px 12px 33px 0;
+    line-height: 4.7vh;
+  }
+
+  .wrapp {
+    width: 35vh;
+    height: 11vh;
+ }
+
+  .link-appstore {
+    background-image: url('img/mobapp.svg');
+    background-size: 16.5vh;
+  }
+
+  .link-playmarket {
+    background-image: url('img/mobplay.svg');
+    background-size: 16.5vh;
+    margin-right: 1vh;
+  }
+
+  .main {
+    background-image: url('img/mobiPhone.png');
+    background-position: center 33vh;
+    background-size: 50vh;
+  }
 }
