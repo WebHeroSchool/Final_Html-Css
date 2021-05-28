@@ -5,7 +5,7 @@ body {
 }
 
 .content-box {
-height: 100vh;
+/* height: 96vh; */
 }
 
 .header {
@@ -76,7 +76,7 @@ body {
   background-repeat: no-repeat;
   background-size: 54vh, 58vh, 50vh;
   background-position: left -8vh, right -9vh, center 43vh;
-  min-height: 100vh;
+  min-height: 91vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -150,6 +150,7 @@ body {
     background-image: url('img/1366bg2.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
     background-size: 41vh, 51vh, 50vh;
     background-position: left -6vh, right -9vh, center 40vh;
+    min-height: 90vh;
   }
 
   .title {
@@ -198,18 +199,18 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 950px) {
   .nav {
     display: none;
   }
 
   .header {
-    margin: 0 40px;
-    margin-top: 108px;
+    margin: 0 20px;
+    margin-top: 45px;
   }
 
   .logo {
-    font-size: 42.5px;
+    font-size: 34.5px;
     letter-spacing: -.1vh;
   }
 
@@ -324,9 +325,9 @@ body {
   }
 
   .title {
-    max-width: 44vh;
+    max-width: 74vh;
     font-size: 24px;
-    margin: 24px 12px 33px 0;
+    margin: 48px 12px 23px 0;
     line-height: 4.7vh;
   }
 
@@ -347,8 +348,69 @@ body {
   }
 
   .main {
+    background-image: url('img/iPhone.png');
+    background-position: center 34vh;
+    background-size: 51vh;
+    min-height: 86vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    margin: 0 40px;
+    margin-top: 108px;
+  }
+
+  .logo {
+    font-size: 42.5px;
+  }
+
+  .logo::after {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo::after, .logo::before {
+    width: 33px;
+    height: 33px;
+  }
+
+  .logo::before {
+    top: 12px;
+  }
+
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0px;
+  }
+
+  .title {
+    max-width: 44vh;
+    margin: 24px 12px 33px 0;
+  }
+
+  .main {
     background-image: url('img/mobiPhone.png');
     background-position: center 33vh;
     background-size: 50vh;
+    min-height: 75vh;
   }
 }
