@@ -4,10 +4,6 @@ body {
   margin: 0;
 }
 
-.content-box {
-/* height: 96vh; */
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +30,7 @@ body {
   content: ' ';
   position: absolute;
   display: block;
-  background-color: #E89C38;
+  background-color: #e89c38;
   width: 28px;
   height: 28px;
   opacity: 0.5;
@@ -45,7 +41,7 @@ body {
   content: ' ';
   position: absolute;
   display: block;
-  background-color: #E89C38;
+  background-color: #e89c38;
   width: 28px;
   height: 28px;
   opacity: 0.5;
@@ -74,7 +70,7 @@ body {
 .main {
   background-image: url('img/bg2.svg'), url('img/bg1.png'), url('img/iPhone.png');
   background-repeat: no-repeat;
-  background-size: 54vh, 58vh, 50vh;
+  background-size: 54vh, 57.3vh, 50vh;
   background-position: left -8vh, right -9vh, center 43vh;
   min-height: 91vh;
   text-align: center;
@@ -148,7 +144,7 @@ body {
 
   .main {
     background-image: url('img/1366bg2.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
-    background-size: 41vh, 51vh, 50vh;
+    background-size: 41.7vh, 51.5vh, 50vh;
     background-position: left -6vh, right -9vh, center 40vh;
     min-height: 90vh;
   }
@@ -169,7 +165,7 @@ body {
     background-image: url('img/1366appstore.svg');
     background-repeat: no-repeat;
     background-size: 18vh;
-    background-position: left 5vh;
+    background-position: left 5.6vh;
     width: 19vh;
   }
 
@@ -177,7 +173,7 @@ body {
     background-image: url('img/1366playmarket.svg');
     background-repeat: no-repeat;
     background-size: 18vh;
-    background-position: right 5vh;
+    background-position: right 5.6vh;
     width: 19vh;
   }
 }
@@ -195,18 +191,18 @@ body {
 
   .main {
     background-image: url('img/1170bg1.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
+    background-size: 40.7vh, 51.4vh, 50.4vh;
     background-position: left -9vh, right -9vh, center 40vh;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1169px) {
   .nav {
     display: none;
   }
 
   .header {
-    margin: 0 20px;
-    margin-top: 45px;
+    margin: 74px 20px;
   }
 
   .logo {
@@ -247,7 +243,7 @@ body {
     align-items: center;
     position: fixed;
     top: 52px;
-    right: 36px;
+    right: 37px;
     width: 26px;
     height: 21px;
     cursor: pointer;
@@ -281,7 +277,7 @@ body {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100%;
+    height: 61vh;
     margin: 0;
     padding: 195px 0;
     list-style: none;
@@ -339,23 +335,24 @@ body {
   .link-appstore {
     background-image: url('img/mobapp.svg');
     background-size: 16.5vh;
+    background-position: left 5vh;
   }
 
   .link-playmarket {
     background-image: url('img/mobplay.svg');
     background-size: 16.5vh;
-    margin-right: 1vh;
+    background-position: left 5vh;
   }
 
   .main {
     background-image: url('img/iPhone.png');
     background-position: center 34vh;
     background-size: 51vh;
-    min-height: 86vh;
+    min-height: 80vh;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   .header {
     margin: 0 40px;
     margin-top: 108px;
