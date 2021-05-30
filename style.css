@@ -139,7 +139,7 @@ body {
   }
 
   .nav {
-    margin-top: 11px;
+    margin-top: 15px;
   }
 
   .main {
@@ -150,31 +150,31 @@ body {
   }
 
   .title {
-    max-width: 95vh;
+    max-width: 94vh;
     font-size: 32px;
-    margin: 83px 0 0 0;
-    letter-spacing: -.2px;
+    margin: 85px 0 0 0;
+    letter-spacing: -0.2px;
   }
 
   .wrapp {
-    width: 38.8vh;
+    width: 37.5vh;
     height: 12vh;
   }
 
   .link-appstore {
     background-image: url('img/1366appstore.svg');
     background-repeat: no-repeat;
-    background-size: 18vh;
+    background-size: 17.2vh;
     background-position: left 5.6vh;
-    width: 19vh;
+    width: 18vh;
   }
 
   .link-playmarket {
     background-image: url('img/1366playmarket.svg');
     background-repeat: no-repeat;
-    background-size: 18vh;
+    background-size: 17.3vh;
     background-position: right 5.6vh;
-    width: 19vh;
+    width: 17vh;
   }
 }
 
@@ -189,14 +189,58 @@ body {
     top: 9px;
   }
 
+  .nav {
+    margin-top: 10px;
+  }
+
   .main {
     background-image: url('img/1170bg1.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
     background-size: 40.7vh, 51.4vh, 50.4vh;
     background-position: left -9vh, right -9vh, center 40vh;
   }
+
+  .wrapp {
+    width: 38.1vh;
+  }
+
+  .link-appstore {
+    background-size: 17.6vh;
+    background-position: left 4.9vh;
+  }
+
+  .link-playmarket {
+    background-size: 17.6vh;
+    background-position: right 4.9vh;
+    width: 18vh;
+  }
 }
 
-@media (max-width: 1169px) {
+@media (max-width: 1150px) {
+  .header {
+    margin: 0px 55px;
+    margin-top: 66px;
+  }
+
+  .logo::before {
+    left: -29px;
+    top: 9px;
+  }
+
+  .main {
+    background-image: url('img/1170bg1.png'), url('img/1366bg1.png'), url('img/1366iPhone.png');
+    background-size: 31.7vh, 36.2vh, 39.4vh;
+    background-position: left 5vh, right 9vh, center 50vh;
+    min-height: 89vh;
+  }
+}
+
+@media (max-width: 970px) {
+  .title {
+    max-width: 74vh;
+  }
+}
+
+@media (max-width: 768px) {
   .nav {
     display: none;
   }
@@ -323,7 +367,7 @@ body {
   .title {
     max-width: 74vh;
     font-size: 24px;
-    margin: 48px 12px 23px 0;
+    margin: 48px 12px 23px 12px;
     line-height: 4.7vh;
   }
 
@@ -352,7 +396,7 @@ body {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 480px) {
   .header {
     margin: 0 40px;
     margin-top: 108px;
@@ -409,5 +453,12 @@ body {
     background-position: center 33vh;
     background-size: 50vh;
     min-height: 75vh;
+  }
+}
+
+@media (max-width: 374px) {
+  .main {
+    background-position: center 38vh;
+    background-size: 42vh;
   }
 }
