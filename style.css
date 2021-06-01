@@ -460,5 +460,6 @@ body {
   .main {
     background-position: center 38vh;
     background-size: 42vh;
+    /* min-height: 80vh; */
   }
 }
