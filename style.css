@@ -60,7 +60,8 @@ body {
 }
 
 .nav {
-  margin-top: 20px;
+
+  margin-top: 20px;
 }
 
 .hamburger-menu {
@@ -80,9 +81,12 @@ body {
 }
 
 .title {
-  max-width: 906px;
-  font-size: 40px;
-  margin: 108px 10px 58px 10px;
+
+  max-width: 906px;
+
+  font-size: 40px;
+
+  margin: 108px 10px 58px 10px;
 }
 
 .wrapp {
@@ -460,6 +464,5 @@ body {
   .main {
     background-position: center 38vh;
     background-size: 42vh;
-    /* min-height: 80vh; */
   }
 }
